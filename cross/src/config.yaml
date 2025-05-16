@@ -1,0 +1,28 @@
+# https://wiki.metacubex.one/config/
+
+mixed-port: 7890 # HTTP(S) 和 SOCKS 代理混合端口
+
+# 全局配置
+
+allow-lan: true # 允许局域网连接
+bind-address: "*"
+authentication: # http,socks 入口的验证用户名，密码
+  - "mihomo:P@ssw0rd"
+skip-auth-prefixes: # 设置跳过验证的 IP 段
+  - 127.0.0.0/8
+  # - ::1/128
+lan-allowed-ips: # 允许连接的 IP 地址段
+  - 127.0.0.0/8
+  - 169.254.0.0/16
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+
+### 运行模式
+# mode: global # 默认为 rule
+
+### 日志级别,
+# log-level: debug # 默认为 info
+
+external-controller: 127.0.0.1:9090 # RESTful API 监听地址
+secret: "123qweASD." # `Authorization:Bearer ${secret}`

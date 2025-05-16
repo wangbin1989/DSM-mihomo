@@ -1,0 +1,33 @@
+{
+    "webservice": {
+        "services": [
+            {
+                "service": "mihomo",
+                "display_name": "Mihomo",
+				"icon": "app/images/mihomo-{0}.png",
+                "type": "reverse_proxy",
+                "proxy_target": "http://127.0.0.1:9090",
+                "proxy_headers": [
+                    {
+                        "name": "Upgrade",
+                        "value": "$http_upgrade"
+                    },
+                    {
+                        "name": "Connection",
+                        "value": "$connection_upgrade"
+                    }
+                ]
+            }
+        ],
+        "portals": [
+            {
+                "service": "mihomo",
+                "name": "mihomo",
+                "display_name": "Mihomo",
+                "app": "com.synocommunity.packages.mihomo",
+                "type": "alias",
+                "alias": "mihomo"
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    ".url": {
+        "com.synocommunity.packages.mihomo": {
+            "type": "url",
+            "icon": "images/mihomo-{0}.png",
+            "title": "Mihomo",
+            "url": "/mihomo",
+            "allUsers": true
+        }
+    }
+}
