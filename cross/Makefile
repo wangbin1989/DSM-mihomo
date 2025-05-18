@@ -1,5 +1,5 @@
 PKG_NAME = mihomo
-PKG_VERS = 1.19.5
+PKG_VERS = 1.19.8
 PKG_EXT = gz
 PKG_DIST_NAME = $(PKG_NAME)-linux-$(PKG_DIST_ARCH)-v$(PKG_VERS).$(PKG_EXT)
 PKG_DIST_SITE = https://github.com/MetaCubeX/mihomo/releases/download/v$(PKG_VERS)

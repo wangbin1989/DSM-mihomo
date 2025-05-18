@@ -1,6 +1,6 @@
 SPK_NAME = mihomo
-SPK_VERS = 1.19.5
-SPK_REV = 1
+SPK_VERS = 1.19.8
+SPK_REV = 2
 SPK_ICON = src/mihomo.png
 
 DEPENDS = cross/mihomo
